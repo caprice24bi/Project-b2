@@ -1,39 +1,30 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>HBD Cake</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="cake">
-      <div class="plate"></div>
-      <div class="layer layer-bottom"></div>
-      <div class="layer layer-middle"></div>
-      <div class="layer layer-top"></div>
-      <div class="icing"></div>
-      <div class="drip drip1"></div>
-      <div class="drip drip2"></div>
-      <div class="drip drip3"></div>
-
-  <main class="wrap">
-    <h1>Selamat Ulang Tahun Sayang ❤️</h1>
-    <p class="hint">Tiup lilinnya lewat mic ya — atau ketuk lilinnya jika mic belum aktif 🎂</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HBD Cake</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Selamat Ulang Tahun Sayang ❤️</h1>
+      <p class="instruction">Tiup lilinnya lewat mic ya 😘🎂 (atau klik kuenya)</p>
+      <canvas id="cake"></canvas>
     </div>
-  </main>
 
-  <div id="confettiCanvasWrap"><canvas id="confettiCanvas"></canvas></div>
+    <!-- Confetti canvas -->
+    <canvas id="confetti"></canvas>
 
-  <div id="modal" class="modal hidden">
-    <div class="modal-card">
-      <h2>🎉 Selamat!</h2>
-      <p id="modalText">selamat ulang tahun yang ke-34 sayang</p>
-      <button id="closeBtn">Tutup</button>
+    <!-- Popup ucapan -->
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        🎉 Selamat Ulang Tahun yang ke-34 Sayang 🎉
+      </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
-  <script src="confetti.js"></script>
-</body>
+    <script src="confetti.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
+
