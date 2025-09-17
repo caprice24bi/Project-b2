@@ -1,0 +1,32 @@
+:root{
+  --bg1:#3a2d2a;
+  --bg2:#6b6b6b;
+  --cream:#efe6da;
+  --accent:#b5651d;
+  --text:#f7f3ee;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+body{background:linear-gradient(120deg,var(--bg1),var(--bg2));color:var(--text);display:flex;align-items:center;justify-content:center;padding:24px;overflow:hidden;}
+.wrap{max-width:760px;width:100%;text-align:center}
+h1{margin:0 0 8px;font-size:28px;color:var(--cream);letter-spacing:0.6px}
+.hint{margin:0 0 18px;color:#e7ddd5;font-size:15px}
+.stage{background:linear-gradient(180deg, rgba(255,255,255,0.03), transparent);padding:16px;border-radius:18px;box-shadow:0 6px 30px rgba(0,0,0,0.45);display:flex;justify-content:center;align-items:center}
+canvas{max-width:100%;height:auto;border-radius:12px;display:block}
+
+/* corner decorations */
+.corner-deco{position:fixed;width:120px;height:120px;opacity:0.35;pointer-events:none;filter:blur(2px)}
+.top-left{top:12px;left:12px;background:radial-gradient(circle at 20% 20%, #ff6b6b, transparent 40%), linear-gradient(45deg,#ffd166,#ffb4a2)}
+.top-right{top:8px;right:8px;background:radial-gradient(circle at 80% 20%, #9ad3bc, transparent 40%), linear-gradient(45deg,#bde0fe,#9ad3bc)}
+.bottom-left{bottom:8px;left:8px;background:radial-gradient(circle at 20% 80%, #f7c6c7, transparent 40%), linear-gradient(45deg,#ffd6a5,#f8edeb)}
+.bottom-right{bottom:12px;right:12px;background:radial-gradient(circle at 80% 80%, #c4b5fd, transparent 40%), linear-gradient(45deg,#c4b5fd,#bde0fe)}
+
+/* modal */
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.45);z-index:9999}
+.modal.hidden{display:none}
+.modal-card{background:var(--cream);color:#2b2b2b;padding:20px 22px;border-radius:12px;min-width:260px;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,0.3)}
+.modal-card h2{margin:0 0 8px}
+.modal-card button{margin-top:12px;padding:8px 12px;border-radius:8px;border:none;background:var(--accent);color:#fff;cursor:pointer}
+
+/* confetti canvas wrapper above everything */
+#confettiCanvasWrap{position:fixed;inset:0;pointer-events:none;z-index:8888}

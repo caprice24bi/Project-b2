@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HBD Cake</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="corner-deco top-left"></div>
+  <div class="corner-deco top-right"></div>
+  <div class="corner-deco bottom-left"></div>
+  <div class="corner-deco bottom-right"></div>
+
+  <main class="wrap">
+    <h1>Selamat Ulang Tahun Sayang ❤️</h1>
+    <p class="hint">Tiup lilinnya lewat mic ya — atau ketuk lilinnya jika mic belum aktif 🎂</p>
+    <div class="stage">
+      <canvas id="cakeCanvas" width="600" height="420"></canvas>
+    </div>
+  </main>
+
+  <div id="confettiCanvasWrap"><canvas id="confettiCanvas"></canvas></div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <h2>🎉 Selamat!</h2>
+      <p id="modalText">selamat ulang tahun yang ke-34 sayang</p>
+      <button id="closeBtn">Tutup</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="confetti.js"></script>
+</body>
+</html>
