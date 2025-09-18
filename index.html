@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Happy Birthday</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1 id="title">Selamat Ulang Tahun Sayang ❤️</h1>
-      <p class="instruction">Tiup lilinnya lewat mic ya 😘🎂</p>
-    </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tiup Kue Ulang Tahun 🎂</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-banner">🎉 Selamat Ulang Tahun! 🎉</header>
 
-    <div class="cake">
-      <div class="plate"></div>
-      <div class="layer layer-bottom"></div>
-      <div class="layer layer-middle"></div>
-      <div class="layer layer-top"></div>
-      <div class="icing"></div>
-      <div class="drip drip1"></div>
-      <div class="drip drip2"></div>
-      <div class="drip drip3"></div>
+  <main class="container">
+    <p class="instructions">
+      Tiup lilin lewat mic (aktifkan microphone) — atau klik api lilin untuk memadamkan.
+    </p>
 
-      <!-- 5 candles -->
-      <div class="candle"><div class="flame"></div></div>
-      <div class="candle"><div class="flame"></div></div>
-      <div class="candle"><div class="flame"></div></div>
-      <div class="candle"><div class="flame"></div></div>
-      <div class="candle"><div class="flame"></div></div>
-    </div>
+    <section class="stage">
+      <!-- Kue 3 layer -->
+      <div class="cake">
+        <div class="cake-layer cake-layer-1"></div>
+        <div class="cake-layer cake-layer-2"></div>
+        <div class="cake-layer cake-layer-3"></div>
 
-    <canvas id="confetti"></canvas>
+        <!-- Lilin -->
+        <div class="candle">
+          <div class="wick"></div>
+          <div class="flame" id="flame"></div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- Popup -->
+  <div class="popup" id="popup">✨ Selamat! Level Up! ✨</div>
+
+  <script src="script.js" defer></script>
+</body>
 </html>
-
